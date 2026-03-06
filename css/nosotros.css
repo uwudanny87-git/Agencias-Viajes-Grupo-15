@@ -1,0 +1,63 @@
+/* ESTILO GENERAL */
+body{
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #2C3E50;
+}
+/* CONTENEDOR PRINCIPAL */
+.pantalla-nosotros{
+    text-align: center;
+    padding: 40px;
+}
+/* TÍTULO PRINCIPAL */
+h1{
+    color: #1E88E5;
+    font-size: 40px;
+}
+.seccion h2{
+    margin-top: 70px;
+}
+/* SUBTÍTULO */
+.subtitulo{
+    margin-bottom: 80px;
+    font-size: 20px;
+}
+/* SECCIONES GENERALES */
+.seccion{
+    margin-bottom: 70px;
+}
+/* HISTORIA */
+.seccion p{
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+/* MISIÓN Y VISIÓN */
+.mision-vision{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+/* CAJAS */
+.caja{
+    background-color: #F4D03F;
+    padding: 20px;
+    width: 300px;
+    border-radius: 20px;
+}
+/* EQUIPO */
+.equipo{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+}
+/* PERSONA */
+.persona{
+    background-color: #2ECC71;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+}
