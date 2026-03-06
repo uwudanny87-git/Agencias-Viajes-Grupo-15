@@ -1,0 +1,92 @@
+/* ESTILO GENERAL */
+body{
+    background-color: #FFFFFF; /* blanco */
+    margin: 0;
+    color: #2C3E50; /* gris oscuro */
+}
+/* CONTENEDOR PRINCIPAL */
+.pantalla{
+    padding: 40px;
+}
+/* TÍTULO */
+h1{
+    color: #1E88E5; /* azul océano */
+     text-align: center;
+      font-size: 40px;
+}
+/* SUBTÍTULO */
+.subtitulo{
+    color: #2C3E50;
+    text-align: center;
+    font-size: 20px;
+    
+}
+/* CONTENEDOR DE FORMULARIO E INFO */
+.contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 80px;
+}
+/* FORMULARIO */
+.formulario{
+    background: #FFFFFF;
+    padding: 40px;
+    width: 390px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #ccc;
+    font-size: 15px;
+}
+.formulario h2{
+    text-align: center; /* solo el título del formulario */
+    font-size: 25px;
+}
+.info h2{
+    text-align: center; /* solo el título de contacto */
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+/* CAMPOS */
+input, textarea{
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 22px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/* BOTÓN */
+button{
+    background-color: #2ECC71; /* verde tropical */
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* EFECTO HOVER */
+button:hover{
+    background-color: #27ae60;
+}
+/* INFORMACIÓN */
+.info{
+    background: #FFFFFF;
+    padding: 20px;
+    width: 280px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #ccc;
+    font-size: 18px;
+}
+/* TÍTULO REDES */
+.redes-titulo{
+    color: #F4D03F; /* amarillo sol */
+    text-align: center;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+/* REDES */
+.redes p{
+    margin: 5px;
+}
