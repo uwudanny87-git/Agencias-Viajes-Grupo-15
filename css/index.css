@@ -1,0 +1,179 @@
+
+:root{
+
+--azul:#1E88E5;
+--verde:#1b7842;
+--amarillo:#F4D03F;
+--blanco:#FFFFFF;
+--gris:#2C3E50;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+button  { cursor: pointer; border: none; background: none; }
+img     { width: 100%; }
+ul      { list-style: none; }
+a      { text-decoration: none; }
+
+header { 
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    background-color: var(--azul);
+    background:
+linear-gradient(rgba(18, 81, 114, 0.4), rgba(112, 209, 209, 0.4))
+}
+
+header .navbar { 
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .nav-text {
+     color: var(--blanco);
+    font-size: 1.5 rem;
+     font-weight: 600;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 10px;
+    color: #088935;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: var(--blanco);
+    font-size: large;
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+.navbar .nav-menu .nav-link:hover {
+    color: var(--verde);
+    background-color: var(--blanco);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-login {
+    color: var(--blanco);
+    font-size: 1.4rem;
+    padding: 8px 10px;
+    border-radius: 50%;
+    border: 2px solid var(--blanco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.nav-login:hover {
+    color: var(--verde);
+    background-color: var(--blanco);
+    border-color: var(--blanco);
+}
+.menu-toggle {
+    display: none;
+}
+
+    .hero-section {
+    background-color: #788591;
+    min-height: 100vh;
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.hero-section .hero-details .title {
+    color: #088935;
+    font-size: 2.3rem;
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    font-size: 2.3rem;
+    max-width: 70%;
+}
+
+.hero-section .hero-details .description {
+    font-size: 1.12rem;
+    max-width: 70%;
+    margin: 24px 0 40px;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    background-color: #237515;
+    color: #000000;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .button:hover {
+    color: white;
+}
+
+
+.hero-section{
+height: 100px;
+background: linear-gradient(rgba(27, 67, 105, 0.4), rgba(0,0,0,0.4)),
+url("../images/playa.jpg");
+
+
+}
+    .nav-link {
+    padding: 10px 18px;
+    color: white;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    }
+
+  .hamburguer {
+    display: none;
+  }
+
+  @media (max-width: 768px){
+    .hamburguer{
+        display: flex;
+    }
+
+    .navbar .nav-menu{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu-toggle:checked + .nav-menu{
+        display: flex;
+    }
+
+    .hero-section .section content{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 100px 24px 68px;
+    }
+  }
