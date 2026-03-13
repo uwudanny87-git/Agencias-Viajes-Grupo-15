@@ -224,3 +224,90 @@ body {
     color: #7dd3f7;
     border-bottom-color: #00a8ff;
 }
+/* --- OPTIMIZACIÓN RESPONSIVE COMPLETA --- */
+
+/* 1. Tablets y Laptops Pequeñas (Menos de 1024px) */
+@media (max-width: 1024px) {
+    .contenedor {
+        padding: 0 30px;
+    }
+    
+    .servicios-grid, .destinos-grid {
+        gap: 20px;
+    }
+}
+
+/* 2. Tablets (Menos de 768px) */
+@media (max-width: 768px) {
+    /* Navbar: Logo arriba, links abajo */
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    /* Ajuste de secciones */
+    .seccion-blanca, .seccion-gris {
+        padding: 50px 0;
+    }
+
+    .encabezado h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Servicios: pasan a ocupar más espacio */
+    .servicio-item {
+        max-width: 45%; /* Dos por fila en tablets */
+        min-width: 250px;
+    }
+}
+
+/* 3. Celulares (Menos de 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .encabezado {
+        margin-bottom: 30px;
+    }
+
+    .encabezado h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Servicios y Destinos: Una sola columna centrada */
+    .servicio-item, .tarjeta-destino {
+        max-width: 100%;
+        width: 100%;
+        flex: none; /* Desactiva el crecimiento automático de flex */
+    }
+
+    .icono-circular {
+        width: 70px;
+        height: 70px;
+    }
+
+    .foto-marco {
+        width: 150px;
+        height: 150px;
+    }
+}
