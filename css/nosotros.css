@@ -1,26 +1,70 @@
 /* ESTILO GENERAL */
-body{
-    margin: 0;
-    background-color: #FFFFFF;
-    color: #2C3E50;
+body {
+    /* Imagen de fondo que cubre toda la pantalla */
+   background: linear-gradient(rgba(9, 9, 9, 0.7), rgba(0, 0, 0, 10)), url("https://clinicascres.com/wp-content/uploads/2024/04/tansparent-of-sea-water-surface-texture-background-free-photo.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    color: #b7c3ca; 
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: rgba(3, 2, 2, 0.2); 
+}
+nav a{
+    
+    transition: color 0.5s ease;
+}
+nav a:hover {
+    color: #057280;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    border: 1px solid white;
+    padding: 5px 10px;
 }
 /* CONTENEDOR PRINCIPAL */
 .pantalla-nosotros{
     text-align: center;
     padding: 40px;
+    color: white; 
 }
 /* TÍTULO PRINCIPAL */
 h1{
-    color: #1E88E5;
+    color: #89b5db;
     font-size: 40px;
 }
 .seccion h2{
     margin-top: 70px;
+    color: #89b5db; 
 }
 /* SUBTÍTULO */
 .subtitulo{
     margin-bottom: 80px;
     font-size: 20px;
+    color: #b7c3ca; 
 }
 /* SECCIONES GENERALES */
 .seccion{
@@ -38,10 +82,11 @@ h1{
     justify-content: center;
     gap: 30px;
     margin-bottom: 40px;
+    color: #ffffff;
 }
 /* CAJAS */
 .caja{
-    background-color: #F4D03F;
+    background-color:#557c92; ;
     padding: 20px;
     width: 300px;
     border-radius: 20px;
@@ -55,7 +100,7 @@ h1{
 }
 /* PERSONA */
 .persona{
-    background-color: #2ECC71;
+    background-color:  #70818b; ;
     color: white;
     padding: 20px;
     width: 200px;
