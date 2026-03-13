@@ -1,0 +1,313 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: rgba(0, 0, 0, 0.2); /* Fondo sutil para legibilidad */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    border: 1px solid rgba(255, 255, 255, 0);
+    padding: 5px 10px;
+}
+/* 1. Reset y Tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    color: #333;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 2. Estilos Comunes de Encabezado */
+.encabezado {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.encabezado h2 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.encabezado h2 span {
+    color: #7dd3f7; /* Color celeste */
+}
+
+.encabezado p {
+    color: #888;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* 3. Estilos de la SECCIÓN SERVICIOS */
+.seccion-blanca {
+    padding: 80px 0;
+}
+
+.servicios-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.servicio-item {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    text-align: center;
+    padding: 30px;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+
+.servicio-item:hover {
+    background-color: #f0faff;
+}
+
+.icono-circular {
+    width: 80px;
+    height: 80px;
+    background-color: #7dd3f7;
+    margin: 0 auto 20px;
+    border-radius: 25px; /* Bordes suaves estilo app */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 15px rgba(125, 211, 247, 0.4);
+}
+
+.icono-circular svg {
+    width: 40px;
+    fill: white;
+}
+
+.servicio-item h3 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* 4. Estilos de la SECCIÓN DESTINOS */
+.seccion-gris {
+    padding: 80px 0;
+    background-color: #f4f7f9;
+}
+
+.destinos-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tarjeta-destino {
+    background: white;
+    width: 260px;
+    padding: 35px 20px;
+    border-radius: 45px; /* Redondeo profundo como la imagen */
+    text-align: center;
+    border-top: 8px solid #7dd3f7;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+}
+
+.foto-marco {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto 25px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.foto-marco img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-destino h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.enlace-mas {
+    text-decoration: none;
+    color: #aaa;
+    font-weight: bold;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #7dd3f7;
+    padding-bottom: 3px;
+    transition: 0.3s;
+}
+
+.enlace-mas:hover {
+    color: #7dd3f7;
+}
+
+/* 5. Responsive */
+@media (max-width: 600px) {
+    .encabezado h2 { font-size: 1.8rem; }
+    .tarjeta-destino { width: 100%; }
+}
+/* --- ANIMACIONES PARA SERVICIOS --- */
+
+.servicio-item {
+    /* Ya tenías transition 0.3s, pero vamos a asegurar el movimiento */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.icono-circular {
+    /* Añadimos transición al icono */
+    transition: transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por el servicio */
+.servicio-item:hover {
+    background-color: #f0faff; /* El fondo celeste suave que ya tenías */
+    transform: translateY(-8px); /* Elevación suave */
+}
+
+.servicio-item:hover .icono-circular {
+    transform: scale(1.1) rotate(5deg); /* El icono crece y gira un poquito */
+    background-color: #00a8ff; /* El celeste se vuelve más intenso */
+    box-shadow: 0 12px 20px rgba(125, 211, 247, 0.6); /* Sombra más fuerte */
+}
+
+/* --- ANIMACIONES PARA DESTINOS --- */
+
+.tarjeta-destino {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.foto-marco img {
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-destino:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.tarjeta-destino:hover .foto-marco img {
+    transform: scale(1.1); /* Zoom en la foto de destino */
+}
+
+.tarjeta-destino:hover .enlace-mas {
+    color: #7dd3f7;
+    border-bottom-color: #00a8ff;
+}
+/* --- OPTIMIZACIÓN RESPONSIVE COMPLETA --- */
+
+/* 1. Tablets y Laptops Pequeñas (Menos de 1024px) */
+@media (max-width: 1024px) {
+    .contenedor {
+        padding: 0 30px;
+    }
+    
+    .servicios-grid, .destinos-grid {
+        gap: 20px;
+    }
+}
+
+/* 2. Tablets (Menos de 768px) */
+@media (max-width: 768px) {
+    /* Navbar: Logo arriba, links abajo */
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    /* Ajuste de secciones */
+    .seccion-blanca, .seccion-gris {
+        padding: 50px 0;
+    }
+
+    .encabezado h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Servicios: pasan a ocupar más espacio */
+    .servicio-item {
+        max-width: 45%; /* Dos por fila en tablets */
+        min-width: 250px;
+    }
+}
+
+/* 3. Celulares (Menos de 600px) */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .encabezado {
+        margin-bottom: 30px;
+    }
+
+    .encabezado h2 {
+        font-size: 1.6rem;
+    }
+
+    /* Servicios y Destinos: Una sola columna centrada */
+    .servicio-item, .tarjeta-destino {
+        max-width: 100%;
+        width: 100%;
+        flex: none; /* Desactiva el crecimiento automático de flex */
+    }
+
+    .icono-circular {
+        width: 70px;
+        height: 70px;
+    }
+
+    .foto-marco {
+        width: 150px;
+        height: 150px;
+    }
+}

@@ -1,0 +1,111 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Imagen de fondo que cubre toda la pantalla */
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://www.sunsetworldresorts.com/sw2018/wp-content/uploads/2025/07/member-blog.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100 vh;
+    color: white;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: rgba(0, 0, 0, 0.2); /* Fondo sutil para legibilidad */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+/* Contenido Principal (Hero) */
+.hero {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    padding: 0 10%;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.title-green {
+    color: #152619;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.btn-explorar {
+    display: inline-block;
+    background-color: #008000;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-explorar:hover {
+    background-color: #006400;
+    transform: scale(1.05);
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .nav-links {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        justify-content: center;
+        text-align: center;
+    }
+}
