@@ -1,0 +1,97 @@
+body {
+    /* Imagen de fondo que cubre toda la pantalla */
+   background: linear-gradient(rgba(9, 9, 9, 0.7), rgba(0, 0, 0, 10)), url("https://clinicascres.com/wp-content/uploads/2024/04/tansparent-of-sea-water-surface-texture-background-free-photo.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: rgba(0, 0, 0, 0.2); 
+}
+
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(219, 219, 219);
+    font-size: 17px;
+    
+}
+
+.nav-links a.active {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 5px 10px;
+    
+}´
+nav a{
+    
+transition: color 0.5s ease;
+}
+nav a:hover {
+    color: #0b8d0d;
+}
+
+/*galery img*/
+
+.galeria-section{
+
+    background-size: cover;
+    padding:75px 60px;
+    text-align:center;
+}
+
+.galeria-section h1{
+    
+    color: #ffffff;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.line{
+    width:139px;
+    height:3px;
+    background:#ffffff;
+    margin:0 auto 50px auto;
+}
+
+.subtitulo{
+     font-size: 1.4rem;
+    margin-bottom: 40px;
+    line-height: 8rem
+}
+.galeria-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.galeria-item img{
+        border: #000000 solid 6px;
+        border-radius: 60px;
+
+    width:80%;
+    height:250px;
+    object-fit:cover;
+    transition:0.4s ease;
+}
+
+.galeria-item img:hover{
+    box-shadow: 0 0  100px 9px rgba(0, 0, 0, 0.5);
+    transform:scale(1.05);
+}
