@@ -33,16 +33,19 @@ body {
 .nav-links li {
     margin-left: 20px;
 }
-
+/*transicion de color*/
+nav a{
+    
+transition: color 0.5s ease;
+}
+nav a:hover {
+    color: #058d05;
+}
+ 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(245, 245, 245);
     font-size: 16px;
-}
-
-.nav-links a.active {
-    border: 1px solid white;
-    padding: 5px 10px;
 }
 
 /* Contenido Principal (Hero) */
@@ -58,7 +61,7 @@ body {
 }
 
 .title-green {
-    color: #152619;
+    color: #2c7311;
     font-size: 2.5rem;
     margin-bottom: 10px;
 }
