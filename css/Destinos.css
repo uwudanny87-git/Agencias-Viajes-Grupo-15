@@ -17,13 +17,17 @@
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(2, 2, 2);
     font-size: 16px;
 }
 
-.nav-links a.active {
-    border: 1px solid white;
-    padding: 5px 10px;
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+    background: rgba(3, 2, 2, 0.2); 
 }
 /* Configuración General */
 * {
@@ -115,4 +119,30 @@ body {
 .btn-more:hover {
     color: #7dd3f7;
     border-bottom: 1px solid #7dd3f7;
+}
+/* --- EFECTOS DE MOVIMIENTO --- */
+
+.card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.image-container img {
+    transition: transform 0.5s ease;
+}
+
+/* Efecto hover sobre la tarjeta completa */
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Efecto hover sobre la imagen al tocar la tarjeta */
+.card:hover .image-container img {
+    transform: scale(1.15) rotate(2deg); /* Un pequeño zoom y rotación */
+}
+
+/* Opcional: Que el botón "MÁS" cambie de color automáticamente */
+.card:hover .btn-more {
+    color: #7dd3f7;
 }

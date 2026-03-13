@@ -17,12 +17,12 @@
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 16px;
 }
 
 .nav-links a.active {
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0);
     padding: 5px 10px;
 }
 /* 1. Reset y Tipografía */
@@ -175,4 +175,52 @@ body {
 @media (max-width: 600px) {
     .encabezado h2 { font-size: 1.8rem; }
     .tarjeta-destino { width: 100%; }
+}
+/* --- ANIMACIONES PARA SERVICIOS --- */
+
+.servicio-item {
+    /* Ya tenías transition 0.3s, pero vamos a asegurar el movimiento */
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    cursor: pointer;
+}
+
+.icono-circular {
+    /* Añadimos transición al icono */
+    transition: transform 0.4s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por el servicio */
+.servicio-item:hover {
+    background-color: #f0faff; /* El fondo celeste suave que ya tenías */
+    transform: translateY(-8px); /* Elevación suave */
+}
+
+.servicio-item:hover .icono-circular {
+    transform: scale(1.1) rotate(5deg); /* El icono crece y gira un poquito */
+    background-color: #00a8ff; /* El celeste se vuelve más intenso */
+    box-shadow: 0 12px 20px rgba(125, 211, 247, 0.6); /* Sombra más fuerte */
+}
+
+/* --- ANIMACIONES PARA DESTINOS --- */
+
+.tarjeta-destino {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+}
+
+.foto-marco img {
+    transition: transform 0.5s ease;
+}
+
+.tarjeta-destino:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.tarjeta-destino:hover .foto-marco img {
+    transform: scale(1.1); /* Zoom en la foto de destino */
+}
+
+.tarjeta-destino:hover .enlace-mas {
+    color: #7dd3f7;
+    border-bottom-color: #00a8ff;
 }
