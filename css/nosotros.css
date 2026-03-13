@@ -133,3 +133,98 @@ h1{
     width: 200px;
     border-radius: 10px;
 }
+/* ========================= */
+/* RESPONSIVE NAVBAR */
+/* ========================= */
+
+@media (max-width: 900px){
+
+    .navbar{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li{
+        margin: 10px 0;
+    }
+
+}
+
+
+/* ========================= */
+/* RESPONSIVE TITULOS */
+/* ========================= */
+
+@media (max-width: 900px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    .subtitulo{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+    .seccion h2{
+        font-size: 22px;
+    }
+
+}
+
+
+/* ========================= */
+/* RESPONSIVE MISION Y VISION */
+/* ========================= */
+
+@media (max-width: 900px){
+
+    .mision-vision{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .caja{
+        width: 90%;
+    }
+}
+/* ========================= */
+/* RESPONSIVE EQUIPO */
+/* ========================= */
+
+@media (max-width: 900px){
+
+    .equipo{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .persona{
+        width: 80%;
+    }
+}
+
+/* ========================= */
+/* RESPONSIVE GENERAL CELULAR */
+/* ========================= */
+
+@media (max-width: 600px){
+
+    .pantalla-nosotros{
+        padding: 20px;
+    }
+
+    p{
+        font-size: 14px;
+    }
+
+}
